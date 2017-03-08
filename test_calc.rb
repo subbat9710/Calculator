@@ -8,4 +8,9 @@ class TestCalculator < Minitest::Test
     	result = calc.add(2,2)
     	assert_equal(4, result)
     end
+    def test_20_add_5_return_25
+    	calc = Calculator.new
+    	result = calc.add(20,5)
+    	assert_equal(25, result)
+    end
 end
