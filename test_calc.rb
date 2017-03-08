@@ -23,4 +23,9 @@ class TestCalculator < Minitest::Test
     	result = calc.subtract(4,2)
     	assert_equal(2, result)
     end
+    def test_5_subtract_2_results_2
+    	calc = Calculator.new
+    	result = calc.subtract(6.44,2.00)
+    	assert_equal(4.44, result)
+    end
 end
