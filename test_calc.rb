@@ -53,4 +53,14 @@ class TestCalculator < Minitest::Test
     	result = (2 + 2 - 2 * 2 / 2)
     	assert_equal(2, result)
     end
+    def test_12_multiply_calculator
+    	calc = Calculator.new
+    	result = calc.multiply(96.6,2.9)
+    	assert_equal(280.14, result)
+    end
+    def test_11_calculator
+    	calc = Calculator.new
+    	result = (2.6 + 8.1 - 3.2 * 5.5 / 2.69)
+    	assert_equal(4.16, result)
+    end
 end
