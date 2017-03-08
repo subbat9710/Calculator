@@ -63,4 +63,14 @@ class TestCalculator < Minitest::Test
     	result = calc.divide(5.5,2.69)
     	assert_equal(2.04, result)
     end
+    def test_12_calculator
+    	calc = Calculator.new
+    	result = (2.6 + 8.1 - 3.2 - 5.5 + 2.69).round(2) #round can round off the number after decimal point
+    	assert_equal(4.69, result)
+    end
+    def test_13_calculator
+        calc = Calculator.new
+        result = (2.6 + 8.1 - 3.2 * 5.5 / 2.69).round(2)
+        assert_equal(4.16, result)
+    end
 end
