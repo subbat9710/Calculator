@@ -13,4 +13,9 @@ class TestCalculator < Minitest::Test
     	result = calc.add(20,5)
     	assert_equal(25, result)
     end
+    def test_3_add_decimal_values
+    	calc = Calculator.new
+    	result = calc.add(1.50,1)
+    	assert_equal(2.50, result)
+    end
 end
