@@ -60,7 +60,7 @@ class TestCalculator < Minitest::Test
     end
     def test_11_calculator
     	calc = Calculator.new
-    	result = (2.6 + 8.1 - 3.2 * 5.5 / 2.69)
-    	assert_equal(4.16, result)
+    	result = calc.divide(5.5,2.69)
+    	assert_equal(2.04, result)
     end
 end
