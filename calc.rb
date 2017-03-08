@@ -8,6 +8,11 @@ class Calculator
 	end
 
 	def multiply(num1, num2)
-		num1 * num2
+		num = num1 * num2 
+		num.round(2)
+	end
+
+	def divide(num1, num2)
+		num1 / num2
 	end
 end

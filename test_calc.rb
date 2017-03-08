@@ -33,14 +33,24 @@ class TestCalculator < Minitest::Test
     	result = calc.multiply(6,2)
     	assert_equal(12, result)
     end
-    def test_7_multiply
-    	calc = Calculator.new
-    	result = calc.multiply(6.6,1)
-    	assert_equal(6.6, result)
-    end
     def test_8
     	calc = Calculator.new
     	result = (2 + 2 - 2)
+    	assert_equal(2, result)
+    end
+    def test_9_multiply_2_results_12
+    	calc = Calculator.new
+    	result = calc.multiply(6.6,2.4)
+    	assert_equal(15.84, result)
+    end
+    def test_10_division
+    	calc = Calculator.new
+    	result = calc.divide(10,2)
+    	assert_equal(5, result)
+    end
+    def test_11_calculator
+    	calc = Calculator.new
+    	result = (2 + 2 - 2 * 2 / 2)
     	assert_equal(2, result)
     end
 end
