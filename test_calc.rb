@@ -73,4 +73,9 @@ class TestCalculator < Minitest::Test
         result = (2.6 + 8.1 - 3.2 * 5.5 / 2.69).round(2)
         assert_equal(4.16, result)
     end
+    def test_14_calculator
+        calc = Calculator.new
+        result = (7.3 * 4.6 - 3.4 / 6.8 + 18 * 8).round(2)
+        assert_equal(177.08, result)
+    end
 end
