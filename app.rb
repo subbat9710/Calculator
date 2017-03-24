@@ -5,17 +5,20 @@ get '/' do
 	erb :get_number
 end
 
-post '/result' do
-    def execution 
-		@number1 = params[:num1].to_i
-		@number2 = params[:num2].to_i
-		@operation = params[:operation]
-		@result = 0
-		@total = Calculator.new.e_operation(@operation, @num1, @num2)
-		while @operation != 'result'
-			@result += @total
+post '/result' do 
+		number1 = params[:number1].to_i
+		number2 = params[:number2].to_i
+		operation = params[:operation]
+		total = Calculator.new
+		if operation == "add"
+			result = total.add(number1, number2)
+		elsif operation == "subtract"
+			result = total.subtract(number1, number2)
+		elsif operation == "multiply"
+			result = total.multiply(number1, number2)
+		elsif operation == "divide"
+			result = total.divide(number1, number2)
 		end
-		@result
-	end
-	erb :add
+		
+	erb :add, :locals => {:result => result}
 end
