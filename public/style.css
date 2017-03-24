@@ -2,6 +2,7 @@ body {
 	text-align: center;
 	margin: auto;
 	font-family: 'menlo' sans-serif;
+	background-color: blue;
 }
 
 .main_title {
