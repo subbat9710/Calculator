@@ -2,12 +2,12 @@ body {
 	text-align: center;
 	margin: auto;
 	font-family: 'menlo' sans-serif;
-	background-color: blue;
+	background-color: powderblue;
 }
 
 .main_title {
 	text-align: center;
-	color: blue;
+	color: black;
 	margin-top: 40px;
 }
 
