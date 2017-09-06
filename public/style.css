@@ -1,16 +1,34 @@
+* {
+	padding: 0;
+	margin: 0;
+}
 body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
 	text-align: center;
-	margin: auto;
-	font-family: 'menlo' sans-serif;
-	background-color: powderblue;
 }
-
-.main_title {
-	text-align: center;
-	color: black;
-	margin-top: 40px;
+h1,
+h2,
+h4 {
+	font-family: 'PT Sans Narrow', Aerial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
 }
-
+p {
+	font-size: 15px;
+	line-height: 21px;
+}
+.btn {
+	transition: all 300ms ease-in-out;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background: #ededed !important;
+	color: #3c3c3c !important;
+}
 form {
 	text-align: center;
 	display: inline-block;
@@ -19,4 +37,7 @@ form {
 
 .logo {
 	margin-top: 30px
+}
+.calculate {
+	text-align: center;
 }
