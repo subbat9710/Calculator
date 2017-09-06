@@ -21,4 +21,4 @@ post '/result' do
 		end
 		
 	erb :add, :locals => {:result => result}
-end
+end   #app
